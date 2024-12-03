@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import ItemCard from "./ItemCard";
+
+const checkoutItems = [
+  {
+    id: 0,
+    name: 'Red Cart',
+    quantity: 2
+  },
+  {
+    id: 1,
+    name: 'Green Cart',
+    quantity: 1
+  },
+  {
+    id: 2,
+    name: 'Blue Cart',
+    quantity: 1
+  },
+  {
+    id: 3,
+    name: 'Chrome Cart',
+    quantity: 1
+  }
+]
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Our Shopping Cart App</h1>
+      {checkoutItems.map((i)=> <ItemCard item={i} /> )}
     </div>
   );
 }
