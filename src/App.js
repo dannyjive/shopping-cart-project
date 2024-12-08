@@ -1,4 +1,5 @@
 import CardGallery from "./CardGallery";
+import Header from "./components/Header";
 // import ItemCard from "./ItemCard";
 
 //Import Images
@@ -62,18 +63,12 @@ const products = [
 
 function App() {
   return (
-    <div>
-      <h1>Our Shopping Cart App</h1>
-
+    <>
+      <Header />
       <div className='d-flex flex-row'>
         {products.map((index) => <CardGallery descrip={index.description} name={index.name} image={index.image} prices={index.price} /> )}
       </div>
-
-   
-
-
-
-    </div>
+    </>
   );
 }
 
