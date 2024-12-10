@@ -1,12 +1,7 @@
-@font-face {
-  font-family: 'ADLaMDisplay';
-  src: url(C:\Users\joshuaatendidobear\OneDrive\Desktop\NucampFolder\NucampFolder\WebDev\3-React\shopping-cart-project\src\assets\ADLaM_Display\ADLaMDisplay-Regular.ttf);
-}
-
 body {
   margin: 1em;
   color: #29898E;
-  font-family: 'ADLaMDisplay';
+  font-family: 'ADLaM Display';
 }
 
 .menu-div {
@@ -17,13 +12,13 @@ body {
 .menu-div a {
   padding: 0.5em;
   color: #29898E;
-  font-family: 'ADLaMDisplay';
+  font-family: 'ADLaM Display';
   text-decoration: none;
 }
 
 .navbar {
   color: #29898E;
-  font-family: 'ADLaMDisplay';
+  font-family: 'ADLaM Display';
 }
 
 .navbar ul {
