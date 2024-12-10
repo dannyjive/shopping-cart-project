@@ -1,7 +1,7 @@
-import CardGallery from "./CardGallery";
+import CardGallery from "./components/CardGallery";
 import Header from "./components/Header";
 // import ItemCard from "./ItemCard";
-import "./CardGallery.css";
+import "./components/CardGallery.css";
 
 
 //Import Images
@@ -70,20 +70,26 @@ function App() {
   return (
 
     <div>
-      <h1>Our Shopping Cart App</h1>
+      {/* HEADER */}
+      <>
+        <Header />
+      </>
+
+      {/* CAROUSEL  */}
+      <h4>Carousel here</h4>
+
+
+      {/* FEATURED*/}
       <div className="row">
         <div className="col"></div>
-    
-        {/* HEADER */}
-        <>
-          <Header />
-          <div className='d-flex flex-row'>
-            {products.map((index) => <CardGallery descrip={index.description} name={index.name} image={index.image} prices={index.price} /> )}
-          </div>
-        </>
-    
-        {/* CARD GALLERY */}
+        <div className="col-10"><h4>featured</h4></div>
+        <div className="col"></div>
+      </div>
+      {/* CARD GALLERY */}
+      <div className="row cardContainerRow">
+        <div className="col"></div>    
         <div className="col-10 d-flex flex-row card-custom">
+
           {products.map((index) => (
             <CardGallery
               key={index}
@@ -93,10 +99,11 @@ function App() {
               prices={index.price}
             />
           ))}
-        </div>
-        
+
+        </div>        
         <div className="col"></div>
       </div>
+      <h6>footer</h6>
     </div>
 
   );
