@@ -4,7 +4,7 @@ h4 {
   margin-top: 12px;
 }
 
-.row {
+.card-banner {
 background-color: #F3E9DE;
 }
 
@@ -55,4 +55,18 @@ background-color: #F3E9DE;
 .btnContainer {
   display: flex;
   justify-content: right;
+}
+
+/* Footer */
+h6 {
+  font-family: 'ADLaM Display';
+  color:#29898E;
+}
+
+.footer-col {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
