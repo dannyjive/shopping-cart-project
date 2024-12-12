@@ -4,11 +4,21 @@ import Header from "./components/Header";
 import "./components/CardGallery.css";
 
 
+
+//Carousel
+import React from 'react';
+import Carousel from "./components/carousel.js";
+
+import bannercart from './imgs/bannercart.jpg';
+import bannercart2 from './imgs/bannercart2.jpg';
+
+
 //Import Images
 import bluecart from "./imgs/bluecart.jpg";
 import chromecart from "./imgs/chromecart.webp";
 import greencart from "./imgs/greencart.jpg";
 import orangecart from "./imgs/orangecart.webp";
+
 
 //Shopping Cart Card Data -DF
 const products = [
@@ -67,6 +77,12 @@ const products = [
 // ]
 
 function App() {
+
+  const images  = [
+     bannercart ,
+    bannercart2,
+  ];
+
   return (
 
     <div>
@@ -75,8 +91,17 @@ function App() {
         <Header />
       </>
 
-      {/* CAROUSEL  */}
-      <h4>Carousel here</h4>
+
+      <Carousel images={images} />
+
+      <div className='d-flex flex-row'>
+        {products.map((index) => <CardGallery 
+        descrip={index.description} 
+        name={index.name} 
+        image={index.image} 
+        prices={index.price} /> )}
+      </div>
+
 
 
       {/* FEATURED*/}
