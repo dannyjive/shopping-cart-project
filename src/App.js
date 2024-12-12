@@ -9,8 +9,11 @@ import "./components/CardPanel.css";
 import Footer from "./components/Footer";
 
 
-
-
+// Create your branch: "git checkout -b your-branch-name"
+// Add your changes to git-local: "git add ."
+// Commit your changes to git-local: "git commit -m 'add message here' "
+// Update your branch: "git push -u origin your-branch-name"
+// Pull latest repo before working on new stuff: 'git pull origin main'
 
 
 function App() {
