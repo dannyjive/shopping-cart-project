@@ -1,0 +1,58 @@
+h4 {
+  font-family: 'ADLaM Display';
+  color:#29898E;
+  margin-top: 12px;
+}
+
+.row {
+background-color: #F3E9DE;
+}
+
+.cardContainerRow {
+  height: 27rem;
+}
+
+.card-custom h5 {
+  font-family: 'ADLam Display';
+  font-size: 1rem;
+  color: #29898E;
+}
+
+.card-img-top {
+  height: 180px;
+  object-fit: contain;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.card-custom p {
+  font-family: 'Crimson', serif;
+  font-size: .90rem;
+  line-height: 1.2;
+}
+
+.cart-icon {
+  height: 2.3rem;
+}
+
+.btn-custom {
+  background: #F2F2F2;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-align: bottom;
+  color: green;
+  font-size: 1.3rem;
+  width: 120px;
+  font-family: 'Crimson', serif;
+}
+
+.btn-custom:hover {
+  background: #D5D5D5;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: right;
+}
