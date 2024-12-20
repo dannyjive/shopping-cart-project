@@ -4,10 +4,10 @@ import cart from '../imgs/emptyCart.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
 import { NavLink } from 'react-router-dom';
-import { useShoppingCart } from '../context/ShoppingCartContext.tsx';
+import { useShoppingCart } from '../context/ShoppingCartContext';
 
 const Header = () => {
-    const { openCart, cartQuantity } = useShoppingCart()
+    const { openCart, cartQuantity } = useShoppingCart();
 
     return (
         <Navbar sticky='top' className='navbar bg-white shadow-sm justify-content-between p-3'>
@@ -18,15 +18,14 @@ const Header = () => {
                     <Nav.Link to='/about' as={NavLink}>About Us</Nav.Link>
                 </Nav>
                 sign in
-                
+
                 <Button 
                     onClick={openCart}
                     style={{ width: '3rem', height: '3rem', position: 'relative' }} 
                     variant='outline-light'
                     className='rounded-circle m-2'
-                    >
-                    
-                    <img className='emptyShoppingCart' src={ cart } alt='shopping cart icon'></img>
+                >
+                    <img className='emptyShoppingCart' src={cart} alt='shopping cart icon' />
                     {cartQuantity > 0 && (
                         <div 
                             className='rounded-circle bg-danger d-flex justify-content-center align-items-center' 
@@ -37,14 +36,17 @@ const Header = () => {
                                 position: 'absolute', 
                                 bottom: 0, 
                                 right: 0, 
-                                transform: 'translate(30%, 30%)'}}>{cartQuantity}
+                                transform: 'translate(30%, 30%)'
+                            }}
+                        >
+                            {cartQuantity}
                         </div>
                     )}
                 </Button>
                 
             </Container>
         </Navbar>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;

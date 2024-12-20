@@ -1,5 +1,5 @@
 import React from "react";
-import CardGallery from "./CardGallery.tsx";
+import CardGallery from "./CardGallery.js";
 
 //Import Images
 import bluecart from "../imgs/bluecart.jpg";
