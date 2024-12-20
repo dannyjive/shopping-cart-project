@@ -1,0 +1,26 @@
+[
+    {
+        "id": 10,
+        "name": "Bulbasaur",
+        "price": 25.00,
+        "imgUrl": "/imgs/bulbasaur.png"
+    },
+    {
+        "id": 20,
+        "name": "Charmander",
+        "price": 20.00,
+        "imgUrl": "/imgs/charmander.png"
+    },
+    {
+        "id": 30,
+        "name": "Squirtle",
+        "price": 25.00,
+        "imgUrl": "/imgs/squirtle.png"
+    },
+    {
+        "id": 40,
+        "name": "Pikachu",
+        "price": 25.00,
+        "imgUrl": "/imgs/pikachu.png"
+    }
+]

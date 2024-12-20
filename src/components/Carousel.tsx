@@ -17,7 +17,7 @@ const Carousel = ({ images }) => {
   };
 
   return (
-    <div className="carousel-container">
+    <div className="carousel-container d-flex">
       <button className="prev" onClick={prevSlide}>
         &#10094;
       </button>
@@ -26,6 +26,7 @@ const Carousel = ({ images }) => {
         src={images[currentIndex]}
         alt={`Slide ${currentIndex}`}
         className="carousel-image"
+        style={{ width: '100%' }}
       />
 
       <button className="next" onClick={nextSlide}>
