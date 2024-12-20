@@ -1,42 +1,52 @@
-import React from 'react'
-import { Navbar, NavbarBrand } from 'reactstrap';
+import React from 'react';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import cart from '../imgs/emptyCart.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../index.css';
+import { NavLink } from 'react-router-dom';
+import { useShoppingCart } from '../context/ShoppingCartContext';
 
 const Header = () => {
-  return (
-    <>
-        <div className='row'>
-            <div className='col'></div>
-            <div className='col-10'>
-                <Navbar className='navbar justify-content-between p-3'>
-                    <NavbarBrand className='navbar-brand fs-2 p-0 m-0'>
-                        Our Shopping Cart App
-                    </NavbarBrand>
-                    <ul>
-                        <li>
-                            <a href='#'>sign in</a>
-                        </li>
-                        <li>
-                            <a href='#'><img className='emptyShoppingCart' src={ cart } alt='shopping cart icon'></img></a>
-                        </li>
-                    </ul>
-                </Navbar>
-            </div>
-            <div className='col'></div>
-        </div>
-        <div className='row'>
-                <div className='menu-div d-flex justify-content-center gap-5'>
-                    <a href='#'>menu</a>
-                    <a href='#'>menu</a>
-                    <a href='#'>menu</a>
-                    <a href='#'>menu</a>
-                </div>
-        </div>
-        
-    </>
-  )
-}
+    const { openCart, cartQuantity } = useShoppingCart();
 
-export default Header
+    return (
+        <Navbar sticky='top' className='navbar bg-white shadow-sm justify-content-between p-3'>
+            <Container>
+                <Nav className='me-auto'>
+                    <Nav.Link to='/' as={NavLink}>The Pokemon Shop</Nav.Link>
+                    <Nav.Link to='/store' as={NavLink}>Store</Nav.Link>
+                    <Nav.Link to='/about' as={NavLink}>About Us</Nav.Link>
+                </Nav>
+                sign in
+
+                <Button 
+                    onClick={openCart}
+                    style={{ width: '3rem', height: '3rem', position: 'relative' }} 
+                    variant='outline-light'
+                    className='rounded-circle m-2'
+                >
+                    <img className='emptyShoppingCart' src={cart} alt='shopping cart icon' />
+                    {cartQuantity > 0 && (
+                        <div 
+                            className='rounded-circle bg-danger d-flex justify-content-center align-items-center' 
+                            style={{ 
+                                color: 'white', 
+                                width: '1.5rem', 
+                                height: '1.5rem', 
+                                position: 'absolute', 
+                                bottom: 0, 
+                                right: 0, 
+                                transform: 'translate(30%, 30%)'
+                            }}
+                        >
+                            {cartQuantity}
+                        </div>
+                    )}
+                </Button>
+                
+            </Container>
+        </Navbar>
+    );
+};
+
+export default Header;
