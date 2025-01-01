@@ -22,5 +22,41 @@
         "name": "Pikachu",
         "price": 25.00,
         "imgUrl": "/imgs/pikachu.png"
+    },
+    {
+        "id": 50,
+        "name": "Diglet",
+        "price": 125.00,
+        "imgUrl": "/imgs/diglet.jpg"
+    },
+    {
+        "id": 60,
+        "name": "Drowzee",
+        "price": 0.26,
+        "imgUrl": "/imgs/drowzee.jpg"
+    },
+    {
+        "id": 70,
+        "name": "Machop",
+        "price": 5.00,
+        "imgUrl": "/imgs/machop.jpg"
+    },
+    {
+        "id": 80,
+        "name": "Mewtwo",
+        "price": 35.00,
+        "imgUrl": "/imgs/mewtwo.jpg"
+    },
+    {
+        "id": 90,
+        "name": "Raticate",
+        "price": 15.00,
+        "imgUrl": "/imgs/raticate.jpg"
+    },
+    {
+        "id": 100,
+        "name": "Dewgong",
+        "price": 3.00,
+        "imgUrl": "/imgs/dewgong.jpg"
     }
 ]

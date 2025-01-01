@@ -18,6 +18,8 @@ export function ShoppingCartProvider({ children }) {
     const openCart = () => setIsOpen(true);
     const closeCart = () => setIsOpen(false);
 
+
+
     function getItemQuantity(id) {
         return cartItems.find(item => item.id === id)?.quantity || 0;
     }

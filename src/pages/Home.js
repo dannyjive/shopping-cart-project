@@ -1,23 +1,15 @@
 import React from "react";
 import Carousel from "../components/Carousel";
 import CardPanel from "../components/CardPanel";
-import bannercart from '../imgs/bannercart.jpg';
-import bannercart2 from '../imgs/bannercart2.jpg';
-import '../components/CardPanel.css'
+import "../components/CardPanel.css";
+import { Store } from "./Store";
 
 export function Home() {
-    
-    const images = [
-        bannercart,
-        bannercart2,
-      ];
-    
-    return (
+
+  return (
     <>
-        <Carousel images={images} />
-        <CardPanel />
-
+      <Carousel />
+      <CardPanel />
     </>
-    )
+  );
 }
-

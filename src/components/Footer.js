@@ -1,17 +1,13 @@
-import React from "react"
+import { Container } from "react-bootstrap";
 
 const Footer = () => {
-    return (
-        <>
-            <div className="row">
-                <div className="col"></div>
-                <div className="col-10 footer-col">
-                    <h6>&copy; 2025 Team Droplet</h6>
-                </div>
-                <div className="col"></div>
-            </div>
-        </>
-    )
-}
+  return (
+    <Container fluid className="p-0 mt-5">
+      <div className="footer-col">
+        <h6>&copy; 2025 Team Droplet</h6>
+      </div>
+    </Container>
+  );
+};
 
-export default Footer
+export default Footer;
