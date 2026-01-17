@@ -22,7 +22,7 @@ export function CartItem({ id, quantity }) {
         boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
       }}
     >
-      <img src={item.imgUrl} style={{ width: "100px", objectFit: "cover" }} />
+      <img src={`${process.env.PUBLIC_URL}/${item.imgUrl}`} style={{ width: "100px", objectFit: "cover" }} alt={item.name}/>
 
       <div className="d-flex flex-row me-auto">
         <div>

@@ -19,7 +19,7 @@ function App() {
   return (
     <ShoppingCartProvider>
       <Header />
- {/* I removed the routing for now because it's only a single page app. But we can bring it back if we want to add more pages. */}
+
         {/* <Container fluid style={{ padding: 0 }}> */}
           <Home />
           {/* <Container className='mb-4'> */}

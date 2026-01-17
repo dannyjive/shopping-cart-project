@@ -25,36 +25,36 @@ function ControlledCarousel() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="/imgs/CarouselImage/pokemonBannerImg1.jpg"
+                src={`${process.env.PUBLIC_URL}/imgs/CarouselImage/pokemonBannerImg1.jpg`}
                 alt="First slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="/imgs/CarouselImage/pokemonBannerImg2.webp"
+                src={`${process.env.PUBLIC_URL}/imgs/CarouselImage/pokemonBannerImg2.webp`}
                 alt="Second slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="/imgs/CarouselImage/pokemonBannerImg3.jpg"
+                src={`${process.env.PUBLIC_URL}/imgs/CarouselImage/pokemonBannerImg3.jpg`}
                 alt="Third slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="/imgs/CarouselImage/pokemonBannerImg4.jpg"
-                alt="Third slide"
+                src={`${process.env.PUBLIC_URL}/imgs/CarouselImage/pokemonBannerImg4.jpg`}
+                alt="Fourth slide"
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="/imgs/CarouselImage/pokemonBannerImg5.jpg"
-                alt="Third slide"
+                src={`${process.env.PUBLIC_URL}/imgs/CarouselImage/pokemonBannerImg5.jpg`}
+                alt="Fifth slide"
               />
             </Carousel.Item>
           </Carousel>
